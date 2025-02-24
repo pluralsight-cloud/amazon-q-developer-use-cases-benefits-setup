@@ -11,7 +11,7 @@ def lambda_handler(event, context):
     body = json.dumps({"prompt": "Human:"+prompt_data+"\nAssistant:", "max_tokens_to_sample":300})
     
     #Define the model info
-    modelId='amazon.titan-text-lite-v1'
+    modelId='anthropic.claude-v2'
     accept = 'application/json'
     contentType = 'application/json'
     
